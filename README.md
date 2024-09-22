@@ -24,7 +24,7 @@ Installation
 1. Clone the Repository:
    git clone <repository-url>
    cd llm-frontend
-2.Create a .env.local file in the root directory and add your OpenAI API key like this:
+2. Create a .env.local file in the root directory and add your OpenAI API key like this:
    OPENAI_API_KEY="(your-api-key-here)"
 3. Install Dependencies: Install the required dependencies using npm:
    npm install
