@@ -1,13 +1,16 @@
-import { MantineProvider, MantineThemeOverride } from "@mantine/core";
+import { MantineProvider } from "@mantine/core";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { useState } from "react";
+import Providers from "@/_providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "GT LLM",
-    description: "Your AI Assistant ",
+    title: "GTChat",
+    description: "Your AI Assistant",
 };
 
 export default function RootLayout({
@@ -15,12 +18,11 @@ export default function RootLayout({
 }: {
     children: React.ReactNode;
 }) {
+
     return (
         <html lang="en">
             <body className={inter.className}>
-                <MantineProvider withCssVariables defaultColorScheme="light">
-                    {children}
-                </MantineProvider>
+                <Providers>{children}</Providers>
             </body>
         </html>
     );
