@@ -1,5 +1,0 @@
-lucide
-zod
-@hookform/resolvers
-react-hot-toast
-axios
