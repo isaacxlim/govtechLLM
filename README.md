@@ -24,11 +24,13 @@ Installation
 1. Clone the Repository:
    git clone <repository-url>
    cd llm-frontend
-2. Install Dependencies: Install the required dependencies using npm:
+2.Create a .env.local file in the root directory and add your OpenAI API key like this:
+   OPENAI_API_KEY="(your-api-key-here)"
+3. Install Dependencies: Install the required dependencies using npm:
    npm install
-3. Start the Development Server: Start the app in development mode:
+4. Start the Development Server: Start the app in development mode:
    npm run dev
-4. Open in Browser: Once the server is running, open your browser and visit: http://localhost:3000
+5. Open in Browser: Once the server is running, open your browser and visit: http://localhost:3000
 
 Running Tests
 This project follows Test-Driven Development (TDD). Tests are located in the page.test.tsx file in the /chat directory.
